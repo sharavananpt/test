@@ -1,0 +1,41 @@
+<div class="container">
+
+  <div class="headerSec">
+    <h2 i18n="@@topHeading">Book an Appoinment</h2>
+    <h5 i18n="@@jumbotronText">Our Investing Topics</h5>
+  </div>
+
+  <div class="descText">
+    <h4 i18n="@@descText">Pick a topic, then we'll find a time and place</h4>
+  </div>
+  <div class="row" *ngIf="buttonTexts.length > 1">
+    <div class="col-xs-12 col-sm-6 col-md-6" *ngFor="let textValue of buttonTexts">
+      <button appHeight class="btn btn-default buttonStyle" i18n="@@buttonTexting">{textValue.text,
+          select, Open a chequing account {Open a chequing account} 
+                  Open a savings account {Open a savings account} 
+                  Open a U.S. Dollar account {Open a U.S. Dollar account} 
+                  Review my everyday banking needs {Review my everyday banking needs} 
+                  Switch to TD {Switch to TD} 
+                  Apply for Overdraft Protection {Apply for Overdraft Protection}}</button>
+    </div>
+  </div>
+
+  <div class="Test" *ngIf="buttonTexts.length == 1">
+    <button appHeight class="btn btn-default singleButtonStyle" i18n="@@buttonTexting">{buttonTexts[0].text,
+          select, Open a chequing account {Open a chequing account} 
+                  Open a savings account {Open a savings account} 
+                  Open a U.S. Dollar account {Open a U.S. Dollar account} 
+                  Review my everyday banking needs {Review my everyday banking needs} 
+                  Switch to TD {Switch to TD} 
+                  Apply for Overdraft Protection {Apply for Overdraft Protection}}</button>
+  </div>
+  <div class="clear"></div>
+  <div>
+    <h5 class="footersec">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <a class="alink" routerLink="/home" i18n="@@returnLink">Return to previous screen</a>
+    </h5>
+  </div>
+
+</div>
+

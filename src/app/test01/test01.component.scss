@@ -1,0 +1,47 @@
+.container {
+    text-align: center;
+    padding-right: -20px;
+}
+
+%common-button-style {
+    white-space: normal;
+    font-size: 16px;
+    color: rgba(0, 68, 0, 1);
+    margin-top: 10px;    
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: rgba(0, 68, 0, 1);
+}
+
+.buttonStyle {
+    @extend %common-button-style;
+    width: 100%;
+}
+
+.singleButtonStyle {
+    @extend %common-button-style;
+    width: 18em;
+}
+
+.footersec {
+    padding: 2em;
+}
+
+.alink {
+    font-size: 16px;
+    color: rgba(0, 68, 0, 1);
+}
+
+.Test {
+    height: 100%;
+}
+
+.clear{
+    display: block;
+    clear: both;
+}
+
+.descText {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}

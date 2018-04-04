@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="topHeading" datatype="html">
+        <source>Book an Appoinment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/test01/test01.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="jumbotronText" datatype="html">
+        <source>Our Investing Topics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/test01/test01.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="descText" datatype="html">
+        <source>Pick a topic, then we&apos;ll find a time and place</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/test01/test01.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="buttonTexting" datatype="html">
+        <source>{VAR_SELECT, select, Open a chequing account {Open a chequing account} Open a savings account {Open a savings account} Open a U.S. Dollar account {Open a U.S. Dollar account} Review my everyday banking needs {Review my everyday banking needs} Switch to TD {Switch to TD} Apply for Overdraft Protection {Apply for Overdraft Protection}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/test01/test01.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/test01/test01.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="returnLink" datatype="html">
+        <source>Return to previous screen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/test01/test01.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <target>Retour à l'écran précédent</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

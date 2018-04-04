@@ -1,0 +1,127 @@
+ <div class="test02">
+    <div class="ngdialog ngdialog-theme-default col-xs-12 col-sm-8 col-md-6 col-lg-6">
+
+      <div uib-alert class="alert" attr.role="{{alert.role}}" *ngFor="let alert of alerts" [ngClass]="'alert-' + (alert.type || 'warning')" close="closeAlert($index)">{{alert.msg}}</div>
+
+      <form class="future-banking">
+
+        <section class="container-fluid header">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <i class="fa fa-credit-card fa-2x"></i>
+              <span class="lead header noOutline" tabindex="0">Send Transfer</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+              <div class="btn-group" role="group">
+                <button class="btn btn-default">
+                  <img class="profile-img">
+                  <span id="user-name">John Smith</span>
+                </button>
+                <button class="btn btn-default">
+                  Sign out
+                  <i class="fa fa-sign-out fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <hr/>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-fluid" id="account-info">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-12 noOutline" tabindex="0">
+
+                <h4>From</h4>
+
+                <div class="row bg-gray">
+                  <div class="col-xs-6">Account Name:</div>
+                  <div class="col-xs-6">Checking</div>
+                </div>
+                <div class="row bg-gray">
+                  <div class="col-xs-6">Account Number:</div>
+                  <div class="col-xs-6" aria-label="1.2.3.4.5.6.7.8.9">123456789&nbsp;</div>
+                </div>
+                <div class="row bg-gray">
+                  <div class="col-xs-6">Current Balance:</div>
+                  <div class="col-xs-6">{{5000 | currency }}</div>
+                </div>
+
+                <hr/>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-fluid" id="transfer-details">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-12">
+
+                <h4 tabindex="0" class="noOutline">Transfer details</h4>
+
+                <div class="row bg-gray">
+                  <div class="col-xs-6">
+                    <label id="transfer-amount" for="amtToTransfer">Amount to transfer:</label>
+                  </div>
+                  <div class="col-xs-6">
+                    <input class="form-control" id="amtToTransfer" type="text" value="{{300 | currency}}">
+                  </div>
+                </div>
+
+                <br/>
+
+                <div class="row bg-gray">
+                  <div class="col-xs-6">
+                    <label for="frequencySel" id="transfer-frequency">Frequency:</label>
+                  </div>
+                  <div class="col-xs-6">
+                    <select id="frequencySel" class="form-control">
+                      <option>Every day</option>
+                      <option>Weekly</option>
+                      <option>Bi-weekly</option>
+                      <option>Monthly</option>
+                    </select>
+                  </div>
+                </div>
+
+                <hr/>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-fluid" id="send-to-recipient">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-12">
+                <h4 tabindex="0" class="noOutline">Send to</h4>
+
+                <div class="row">
+                  <div class="col-xs-8">
+                    <img class="profile-img">
+                    <h3 tabindex="0" id="recipient" class="noOutline">Jane Smith</h3>
+                  </div>
+                  <div class="col-xs-4">
+                    <a href="/test2" class="change-user-link">Change recipient</a>
+                  </div>
+                </div>
+
+                <hr/>
+
+                <button type="button" class="btn btn-primary btn-send" (click)="addAlert()">Send {{300 | currency}}</button>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </form>
+    </div>
+  </div>
